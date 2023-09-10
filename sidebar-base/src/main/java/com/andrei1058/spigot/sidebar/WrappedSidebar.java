@@ -55,7 +55,7 @@ public class WrappedSidebar implements Sidebar {
         placeholderProviders.remove(placeholderProvider);
         placeholderProviders.add(placeholderProvider);
 
-        List<PlaceholderProvider> placeholder = List.of(placeholderProvider);
+        List<PlaceholderProvider> placeholder = Collections.singletonList(placeholderProvider);
 
         for (ScoreLine line : lines) {
             SidebarLine.markHasPlaceholders(line.getLine(), placeholder);

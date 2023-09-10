@@ -20,7 +20,7 @@ public abstract class SidebarLine {
      *
      * @param value true if it has placeholders.
      */
-    @Deprecated(forRemoval = true)
+    @Deprecated()
     public void setHasPlaceholders(boolean value) {
         this.setInternalPlaceholders(value);
     }
